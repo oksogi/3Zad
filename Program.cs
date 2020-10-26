@@ -176,6 +176,10 @@ namespace _3Zad
                 Console.WriteLine("МАТРИЦА В: ");
                 Console.WriteLine();
                 b.ReadMat();
+                
+                Console.WriteLine("Транспонированная А: ");
+                a.transp();
+                a.ReadMat();
 
                 Console.WriteLine(" А + B: ");
                 c = (a + b);
@@ -185,13 +189,11 @@ namespace _3Zad
                 d = (a - b);
                 d.ReadMat();
 
-                Console.WriteLine("Умножение матриц А и Б: ");
+                Console.WriteLine(" А * Б: ");
                 f = (a * b);
                 f.ReadMat();
 
-                Console.WriteLine("Транспонированная А: ");
-                a.transp();
-                a.ReadMat();
+                
 
                
                 Console.ReadKey();
